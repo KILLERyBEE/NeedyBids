@@ -814,7 +814,7 @@ function toggleBasePrice() {
                 }
             });
             selectedImages.forEach(img => {
-                formData.append('carsPhotos', img.file);
+                formData.append('carPhotos', img.file);
             });
             const url = form.action;
            await fetch(url, {
