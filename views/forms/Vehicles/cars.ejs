@@ -816,7 +816,7 @@ function toggleBasePrice() {
             selectedImages.forEach(img => {
                 formData.append('carsPhotos', img.file);
             });
-            fetch("http://localhost:3000//cars/cars/submit", {
+            fetch("http://localhost:3000/cars/cars/submit", {
                 method: 'POST',
                 body: formData
             })
