@@ -780,7 +780,7 @@ function toggleBasePrice() {
         });
 
         // Form validation
-        document.querySelector('form').addEventListener('submit', function(e) {
+        document.querySelector('form').addEventListener('submit', async function(e) {
             e.preventDefault();
             const form = this;
             let isValid = true;
@@ -816,7 +816,7 @@ function toggleBasePrice() {
             selectedImages.forEach(img => {
                 formData.append('carsPhotos', img.file);
             });
-            fetch("http://localhost:5000/cars/cars/submit", {
+           await fetch("http://localhost:5000/cars/cars/submit", {
                 method: 'POST',
                 body: formData
             })
