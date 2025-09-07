@@ -622,7 +622,7 @@
                     </div>
                 </div>
 
-                <input type="file" id="fileInput" class="file-input" multiple accept="image/*" name="carPhotos">
+                <input type="file" id="fileInput" class="file-input" multiple accept="image/*" name="carsPhotos">
 
                 <div class="preview-section" id="previewSection" style="display: none;">
                     <div class="preview-title">Image Previews</div>
@@ -814,7 +814,7 @@ function toggleBasePrice() {
                 }
             });
             selectedImages.forEach(img => {
-                formData.append('carPhotos', img.file);
+                formData.append('carsPhotos', img.file);
             });
             const url = form.action;
            await fetch(url, {
