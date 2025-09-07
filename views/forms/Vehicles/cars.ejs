@@ -816,7 +816,8 @@ function toggleBasePrice() {
             selectedImages.forEach(img => {
                 formData.append('carsPhotos', img.file);
             });
-           await fetch("http://localhost:5000/cars/cars/submit", {
+            const url = form.action;
+           await fetch(url, {
                 method: 'POST',
                 body: formData
             })
