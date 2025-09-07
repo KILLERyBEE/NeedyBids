@@ -76,8 +76,8 @@ async function sendOtpEmail(email, otp) {
 		await transporter.sendMail({
 			from: process.env.EMAIL_FROM || process.env.SMTP_USER,
 			to: email,
-			subject: 'Your BidToBuy Email Verification OTP',
-			text: `Your OTP for BidToBuy email verification is: ${otp}`
+			subject: 'Your NeedyBids Email Verification OTP',
+			text: `Your OTP for NeedyBids email verification is: ${otp}`
 		});
 
 		return { success: true };
