@@ -24,7 +24,7 @@ const validateBicyclesInput = (req, res, next) => {
   if (!['No Reserve', 'Reserve'].includes(auctionType)) {
     return res.status(400).json({ error: 'Invalid auction type' });
   }
-  if (!['1 day', '3 days', '7 days', '15 days'].includes(auctionDuration)) {
+  if (!['1 Day', '3 Days', '7 Days', '15 Days'].includes(auctionDuration)) {
     return res.status(400).json({ error: 'Invalid auction duration' });
   }
   if (!['New', 'Used'].includes(condition)) {

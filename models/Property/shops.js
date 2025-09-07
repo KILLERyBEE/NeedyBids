@@ -43,7 +43,7 @@ const shopSchema = new mongoose.Schema({
   },
   auctionDuration: {
     type: String,
-    enum: ['1 day', '3 days', '7 days', '15 days']
+    enum: ['1 Day', '3 Days', '7 Days', '15 Days']
   },
   adTitle: {
     type: String,
